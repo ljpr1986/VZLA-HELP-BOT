@@ -3,7 +3,9 @@ from datetime import datetime
 from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
-TOKEN = open("token.txt", "r").read().strip()
+import os
+
+TOKEN = os.getenv("BOT_TOKEN")
 PEOPLE_FILE = "people.json"
 
 

@@ -1,11 +1,21 @@
 import json
+import os
 from datetime import datetime
 from telegram import Update, ReplyKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
-import os
-
+# Obtener el token desde una variable de entorno
 TOKEN = os.getenv("BOT_TOKEN")
+
+# Si no existe la variable, mostrar un error claro
+if not TOKEN:
+    raise ValueError(
+        "BOT_TOKEN no está configurado.\n"
+        "En tu PC ejecuta:\n"
+        "set BOT_TOKEN=TU_TOKEN\n\n"
+        "En Railway crea la variable BOT_TOKEN con el token de BotFather."
+    )
+
 PEOPLE_FILE = "people.json"
 
 

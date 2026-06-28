@@ -100,11 +100,20 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             return
 
         response = "🏥 Hospitales registrados:\n\n"
+
         for hospital in hospitales:
             total = sum(1 for p in people if p.get("ubicacion", "") == hospital)
-            response += f"- {hospital} ({total} personas)\n"
+            line = f"- {hospital} ({total} personas)\n"
 
-        await update.message.reply_text(response)
+            if len(response) + len(line) > 3500:
+                await update.message.reply_text(response)
+                response = ""
+
+            response += line
+
+        if response.strip():
+            await update.message.reply_text(response)
+
         return
 
     if "Ayuda" in text:

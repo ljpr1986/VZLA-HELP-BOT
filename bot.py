@@ -28,6 +28,43 @@ def save_people(data):
     with open(PEOPLE_FILE, "w", encoding="utf-8") as file:
         json.dump(data, file, indent=4, ensure_ascii=False)
 
+def normalize_hospital(name):
+    name = (name or "").upper().strip()
+
+    if "DOMINGO LUCIANI" in name or "LLANITO" in name:
+        return "Hospital Domingo Luciani"
+
+    if "PEREZ" in name or "PÉREZ" in name or "CARRE" in name:
+        return "Hospital Pérez Carreño"
+
+    if "VARGAS" in name and "GUAIRA" not in name:
+        return "Hospital Vargas de Caracas"
+
+    if "JOSE MARIA VARGAS" in name or "VARGAS LA GUAIRA" in name:
+        return "Hospital Dr. José María Vargas La Guaira"
+
+    if "JM DE LOS RIOS" in name or "J M DE LOS RIOS" in name or "NIÑOS" in name or "NI├" in name:
+        return "Hospital JM de los Ríos"
+
+    if "UNIVERSITARIO" in name:
+        return "Hospital Universitario de Caracas"
+
+    if "CATIA" in name or "RICARDO BAQUERO" in name or "BAQUERO" in name:
+        return "Hospital Dr. Ricardo Baquero González"
+
+    if "CIUDAD CARIBIA" in name:
+        return "Hospital Ciudad Caribia"
+
+    if "VICTORINO SANTAELLA" in name:
+        return "Hospital Victorino Santaella"
+
+    if "CLINICA EL AVILA" in name or "CLÍNICA EL ÁVILA" in name:
+        return "Clínica El Ávila"
+
+    if "CAMPO DE GOLF" in name or "PLAYA LOS COCOS" in name:
+        return "Refugiados Campo de Golf Playa Los Cocos"
+
+    return name.title()
 
 def is_duplicate(new_person, people):
     new_cedula = str(new_person.get("cedula", "")).strip()
@@ -93,7 +130,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     if "Ver hospitales" in text:
         people = load_people()
-        hospitales = sorted(set(p.get("ubicacion", "") for p in people if p.get("ubicacion", "")))
+        hospitales = sorted(set(normalize_hospital(p.get("ubicacion", "")) for p in people if p.get("ubicacion", "")))
 
         if not hospitales:
             await update.message.reply_text("No hay hospitales registrados todavía.")
@@ -102,7 +139,12 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         response = "🏥 Hospitales registrados:\n\n"
 
         for hospital in hospitales:
-            total = sum(1 for p in people if p.get("ubicacion", "") == hospital)
+            total = sum(
+                1
+                for p in people
+                if normalize_hospital(p.get("ubicacion", "")) == hospital
+            )
+
             line = f"- {hospital} ({total} personas)\n"
 
             if len(response) + len(line) > 3500:

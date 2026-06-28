@@ -6,13 +6,13 @@ import unicodedata
 
 PEOPLE_FILE = "people.json"
 
-def normalize_name(name):
-    name = name.lower().strip()
-    name = ''.join(
-        c for c in unicodedata.normalize('NFD', name)
-        if unicodedata.category(c) != 'Mn'
+def normalize_text(text):
+    text = str(text or "").lower().strip()
+    text = ''.join(
+        c for c in unicodedata.normalize("NFD", text)
+        if unicodedata.category(c) != "Mn"
     )
-    return " ".join(name.split())
+    return " ".join(text.split())
 
 def load_json(file_name):
     with open(file_name, "r", encoding="utf-8") as f:
@@ -28,25 +28,28 @@ def backup_people():
     shutil.copy(PEOPLE_FILE, backup_name)
     print(f"✅ Backup creado: {backup_name}")
 
-def is_duplicate(existing_person, new_person):
-    existing_cedula = str(existing_person.get("cedula", "")).strip()
-    new_cedula = str(new_person.get("cedula", "")).strip()
+def same_person(existing, new):
+    existing_cedula = normalize_text(existing.get("cedula", ""))
+    new_cedula = normalize_text(new.get("cedula", ""))
 
     if existing_cedula and new_cedula and existing_cedula == new_cedula:
         return True
 
-    existing_name = normalize_name(existing_person.get("nombre", ""))
-    new_name = normalize_name(new_person.get("nombre", ""))
+    existing_name = normalize_text(existing.get("nombre", ""))
+    new_name = normalize_text(new.get("nombre", ""))
 
     return existing_name == new_name
 
 def merge_person(existing, new):
+    updated = False
+
     for key, value in new.items():
         if value not in ["", None]:
             if existing.get(key) in ["", None]:
                 existing[key] = value
+                updated = True
 
-    return existing
+    return updated
 
 def main():
     if len(sys.argv) < 2:
@@ -62,26 +65,37 @@ def main():
 
     added = 0
     duplicates = 0
+    updated = 0
+
+    print("\nProcesando registros...\n")
 
     for new_person in new_people:
         found = False
 
         for existing_person in people:
-            if is_duplicate(existing_person, new_person):
-                merge_person(existing_person, new_person)
+            if same_person(existing_person, new_person):
+                was_updated = merge_person(existing_person, new_person)
+
+                print(f"🔁 DUPLICADO: {new_person.get('nombre', '')}")
+
                 duplicates += 1
+                if was_updated:
+                    updated += 1
+
                 found = True
                 break
 
         if not found:
             people.append(new_person)
+            print(f"➕ NUEVO: {new_person.get('nombre', '')}")
             added += 1
 
     save_json(PEOPLE_FILE, people)
 
-    print("✅ Importación terminada")
+    print("\n✅ Importación terminada")
     print(f"➕ Nuevos agregados: {added}")
-    print(f"🔁 Duplicados encontrados/actualizados: {duplicates}")
+    print(f"🔁 Duplicados encontrados: {duplicates}")
+    print(f"♻️ Registros actualizados: {updated}")
     print(f"📋 Total actual: {len(people)}")
 
 if __name__ == "__main__":

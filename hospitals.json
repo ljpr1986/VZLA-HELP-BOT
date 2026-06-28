@@ -1,6 +1,646 @@
 [
   {
-    "name": "Hospital Central",
+    "name": "CLINICA EL AVILA",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOPITAL RICARDO BAQUERO GONZALEZ - CIRUGIA GENERAL",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL CIUDAD CARIBIA",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL CIUDAD CARIBIA - ALTA POR MEJORÍA",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL CIUDAD CARIBIA - TRASLADADO A CDD LAS MERCEDES",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL CIUDAD CARIBIA - TRASLADADO A HOSPITAL MILITAR",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL DE CATIA - CIRUGIA",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL DE CATIA - MEDICINA",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL DE CATIA - MEDICINA INTERNA",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL DE CATIA - PEDIATRIA",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL DE CATIA - TRAUMA",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL DE CATIA - TRAUMASHOCK",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL DOMINGO LUCIANI (EL LLANITO)",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL DOMINGO LUCIANI (EL LLANITO) - PEDIATRÍA",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL DOMINGO LUCIANI (EL LLANITO) - PISO 2",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL DOMINGO LUCIANI (EL LLANITO) - POLITRAUMA EMERGENCIA VIEJA",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL DOMINGO LUCIANI (EL LLANITO) - TRAUMA",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL DR DOMINGO LUCIANI",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL DR DOMINGO LUCIANI - PEDIATRIA",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL DR DOMINGO LUCIANI - POLITRAUMA EMERGENCIA",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL DR DOMINGO LUCIANI - POLITRAUMATIZADO",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL DR DOMINGO LUCIANI - QUIROFANO",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL DR DOMINGO LUCIANI - TRIAJE",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL DR JOSE MARIA VARGAS LA GUAIRA",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL DR JOSE MARIA VARGAS LA GUAIRA - POLITRAUMA EMERGENCIA",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL DR. DOMINGO LUCIANI - PEDIATRÍA",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL DR. DOMINGO LUCIANI - POLITRAUMA EMERGENCIA NUEVA",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL DR. DOMINGO LUCIANI - POLITRAUMA EMERGENCIA VIEJA",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL DR. DOMINGO LUCIANI - QUIROFANO",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL DR. DOMINGO LUCIANI - TRIAJE/QUIROFANO",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL DR. DOMINGO LUCIANI - UCI",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL JM DE LOS RIOS - CX.",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL JM DE LOS RIOS - CX. PLASTICA",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL JM DE LOS RIOS - FRENTE TRAUMA SHOCK",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL JM DE LOS RIOS - MED I",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL JM DE LOS RIOS - MED II",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL JM DE LOS RIOS - MED III",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL JM DE LOS RIOS - MED IV",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL JM DE LOS RIOS - PEDIATRIA SALA A",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL JM DE LOS RIOS - PEDIATRIA SALA B",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL JM DE LOS RIOS - PROCEDIMIENTO",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL JM DE LOS RIOS - TRAUMA SHOCK",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL JM DE LOS RIOS - TRIAJE",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL PEREZ CARREÑO",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL PEREZ CARREÑO - PEDIATRIA",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL PEREZ CARREÑO - PEDIATRÍA",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL PEREZ CARREÑO - TRAUMASHOCK",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL PEREZ CARREÑO - TRIAJE",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL UNIVERSITARIO DE CARACAS",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL UNIVERSITARIO DE CARACAS - PLOTRAUMATISMO",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL UNIVERSITARIO DE CARACAS - POLITRAUMATISMO",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL UNIVERSITARIO DE CARACAS - TRAUMATISMO LEVE (ALTA MEDICA)",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - AISLAMIENTO 1",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - AISLAMIENTO 2",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - CAMA 3 F",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - CONTINGENCIA",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - EMERGENCIA ADULTOS",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - EMERGENCIA PEDIATRICA",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - HOSPITALIZACIÓN - SALA 15 C1",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - MI",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - OBS FEMENINO",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - OBS MASCULINO",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - PEDIATRIA",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - PEDIATRIA PUERICULTURA",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - PEDIATRIA Y PUERICULTURA",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - PEDIATRICO",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - PEDIATRÍA",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - PIZARRA GENERAL / SALA 19",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 10",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 12",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 13 CAMA 1",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 13 CAMA 13",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 13 CAMA 14",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 14 CAMA 15",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 14 CAMA 17",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 14 CAMA 18",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 14 CAMA 20",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 14 CAMA 3",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 14 CAMA 5",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 15",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 19",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 19 CAMA 1",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 19 CAMA 10",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 19 CAMA 11",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 19 CAMA 13",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 19 CAMA 14",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 19 CAMA 15",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 19 CAMA 16",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 19 CAMA 17",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 19 CAMA 18",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 19 CAMA 20",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 19 CAMA 4",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 19 CAMA 5",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 19 CAMA 6",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 19 CAMA 7",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 19 CAMA 8",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 19 CAMA 9",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 2",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 2 CAMA 6",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 22 CAMA 13",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 22 CAMA 2",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 22 CAMA 9",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 4",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 5",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 5 C6",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 6",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 7",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - SALA 9",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - TRAUMA SHOCK",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - TRAUMATOLOGIA",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - TRIAJE 1",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - TRIAJE 2",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - UCC",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VARGAS DE CARACAS - URGENCIAS / PIZARRA GENERAL",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VICTORINO SANTAELLA LOS TEQUES - PEDIATRÍA",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "HOSPITAL VICTORINO SANTAELLA LOS TEQUES - POLITRAUMATISMO",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "Hospital Domingo Luciani",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "Hospital Dr. Domingo Luciani (El Llanito)",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "Hospital Dr. Ricardo Baquero",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "Hospital Pérez Carreño",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "Hospital Pérez Carreño (Triaje)",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "Hospital el llanito",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "JM DE LOS RIOS (HOSP DE NIÑOS)",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "Pediatria",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "Politrauma Emergencia Nueva",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "Politrauma Emergencia Vieja",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "Quirofano",
+    "city": "Por definir",
+    "state": "Por definir"
+  },
+  {
+    "name": "REFUGIADOS CAMPO DE GOLF PLAYA LOS COCOS",
     "city": "Por definir",
     "state": "Por definir"
   }

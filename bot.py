@@ -80,18 +80,18 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = update.message.text.strip()
 
-    if text == "🔍 Buscar familiar":
+    if "Buscar familiar" in text:
         context.user_data["mode"] = "search"
         await update.message.reply_text("Escribe el nombre, apellido o cédula de la persona que buscas:")
         return
 
-    if text == "➕ Agregar información":
+    if "Agregar" in text:
         context.user_data["mode"] = "add_nombre"
         context.user_data["new_person"] = {}
         await update.message.reply_text("Nombre completo de la persona:")
         return
 
-    if text == "🏥 Ver hospitales":
+    if "Ver hospitales" in text:
         people = load_people()
         hospitales = sorted(set(p.get("ubicacion", "") for p in people if p.get("ubicacion", "")))
 
@@ -107,7 +107,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text(response)
         return
 
-    if text == "ℹ️ Ayuda":
+    if "Ayuda" in text:
         await help_command(update, context)
         return
 

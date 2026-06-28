@@ -17,7 +17,20 @@ if not TOKEN:
     )
 
 PEOPLE_FILE = "people.json"
+VISITORS_FILE = "visitors.json"
+ADMIN_ID = 974207587
 
+def load_visitors():
+    try:
+        with open(VISITORS_FILE, "r", encoding="utf-8") as file:
+            return json.load(file)
+    except:
+        return []
+
+
+def save_visitors(data):
+    with open(VISITORS_FILE, "w", encoding="utf-8") as file:
+        json.dump(data, file, indent=4, ensure_ascii=False)
 
 def load_people():
     with open(PEOPLE_FILE, "r", encoding="utf-8") as file:
@@ -97,6 +110,19 @@ main_menu = ReplyKeyboardMarkup(
 
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    visitors = load_visitors()
+
+    telegram_id = update.effective_user.id
+
+    if not any(v["id"] == telegram_id for v in visitors):
+        visitors.append({
+            "id": telegram_id,
+            "name": update.effective_user.full_name,
+            "username": update.effective_user.username or "",
+            "first_seen": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        })
+        save_visitors(visitors)
+
     await update.message.reply_text(
         "🇻🇪 Bot de ayuda para ubicar personas\n\n"
         "Puedes buscar familiares por nombre o cédula, o agregar información de personas ubicadas en hospitales.\n\n"
@@ -113,6 +139,22 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "🏥 Ver hospitales: muestra centros hospitalarios registrados."
     )
 
+async def stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
+
+    if update.effective_user.id != ADMIN_ID:
+        await update.message.reply_text("⛔ Comando solo para administrador.")
+        return
+
+    visitors = load_visitors()
+    people = load_people()
+
+    msg = (
+        f"📊 Estadísticas del bot\n\n"
+        f"👥 Visitantes únicos: {len(visitors)}\n"
+        f"📄 Personas registradas: {len(people)}"
+    )
+
+    await update.message.reply_text(msg)
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     text = update.message.text.strip()
@@ -282,6 +324,7 @@ def main():
     app = Application.builder().token(TOKEN).build()
 
     app.add_handler(CommandHandler("start", start))
+    app.add_handler(CommandHandler("stats", stats))
     app.add_handler(CommandHandler("help", help_command))
     app.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, handle_message))
 
